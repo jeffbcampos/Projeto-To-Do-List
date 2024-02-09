@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tarefas.css">    
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column-menu">
+            <div class="add-menu">
+                <h1>Add Tarefa</h1>
+                <button class="btn-adicionar" onclick="addTask()"></button>
+            </div>            
+        </div>       
+        <div class="container-tarefas">
+            <div class="title-container">
+                <h1>Lista de Tarefas</h1>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form id="task-form">
+                        <label for="task-name">Título da Tarefa:</label>
+                        <input type="text" id="task-name" name="task-name">
+                        <label for="objectives">Objetivos:</label>
+                        <textarea id="objectives" name="objectives"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
