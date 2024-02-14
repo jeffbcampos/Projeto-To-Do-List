@@ -28,22 +28,23 @@ function login () {
 }
 
 function addTask() {
-  var modal = document.getElementById("modal");
+  const modal = document.getElementById("modal");
   modal.style.display = "block";
-}
-
-window.onclick = function(event) {
-  var modal = document.getElementById("modal");
+  window.onclick = function(event) {
+  const modal = document.getElementById("modal");
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
-  var modal = document.getElementById("modal");
+  const modal = document.getElementById("modal");
   modal.style.display = "none";
 }
+}
+
+
 
 
 
